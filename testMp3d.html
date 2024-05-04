@@ -27,7 +27,7 @@ header{
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style:italic; 
-    margin-top: 0px;
+    margin-top: -38px;
 }
 
 iframe{
@@ -72,30 +72,7 @@ height: 80%;
     
 }
 
-.btninfo{
-    border: 0;
-    line-height: 4;
-    padding:26px 10px;
-    font-size: 1rem;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
-    margin-left: 2px;
-    margin-top: 1px;
-    color: #ffffff;
-    /*text-shadow: 1px 1px 1px #000;*/
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0);
-    /*background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));*/
-    /*box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);*/
-    width: 24%;
-    background-image: url(https://api.iconify.design/material-symbols:call.svg?color=%23ffffff);
-    background-repeat: no-repeat;
-    background-position: 50% 15px;
-    background-size: 32px;
-    
-    
-}
+
 
 .menu-container {
     position: relative;
@@ -366,14 +343,19 @@ footer{
       
     
 }
-
+@media screen and(max-width:255px) {
+    h2{
+        font-size: 10px;
+    }
+    
+}
 </style>
 <body>
 
     <header>
         <div id="header">
-            <a href=".//visite-p1.html"><img src="https://api.iconify.design/cil:arrow-circle-left.svg?color=%23b8860b" style="padding-top: 15px; width: 30px;"></a>
-            <h2 style="margin-top: -38px;">Visite virtuelle</h2>
+            <a href="./visite-p1.html"><img src="https://api.iconify.design/cil:arrow-circle-left.svg?color=%23b8860b" style="padding-top: 10px; width: 30px; margin-left:2px;"></a>
+            <h2>Visite virtuelle</h2>
 
         </div>
     </header>
@@ -382,10 +364,19 @@ footer{
 
     <footer>
         <div id="piedpage">
-            <a href=".//hitorique.html"><button class="btncollec" type="button" style="cursor: pointer; width: 23%; padding-left: 12px;">Historique</button></a>
-            <a href=".//plan/index.html"><button class="btnplan" type="button" style="cursor: pointer; margin-right:-15px;">Plan</button></a>
-            <a href="../testMp3d.html"><button class="btnvisite" type="button"style="cursor: pointer;">Visite</button></a>
-            <a href=".//infos.html"><button class="btninfo" type="button"style="cursor: pointer;">Contact</button></a>
+            
+            <a href="./page-transition-collection.html"><button class="btncollec" type="button" style="cursor: pointer; width: 23%; padding-left: 12px;">Historique</button></a>
+            <a href=".//plan/index.html"><button class="btnplan" type="button" style="cursor: pointer;margin-right:-15px;">Plan</button></a>
+            <a href=".//visite-p1.html"><button class="btnvisite" type="button"style="cursor: pointer;">Visite</button></a>
+            <div class="menu-container">
+                <button id="menu-btn">Plus</button>
+                <div id="menu-dropdown" class="dropdown-content">
+                 
+                  <a href="./infos.html">Contact</a>
+                  <a href=".//village.html" style="font-size: 15px;">Site web</a>
+                </div>
+              </div>
+        </div>
             
         </div>
     </footer>
